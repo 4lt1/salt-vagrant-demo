@@ -648,9 +648,11 @@ fileserver_backend:
 
 gitfs_update_interval: 20
 
+# Define a branch que será utilizada como environment base
 gitfs_base: main
 gitfs_remotes:
    - https://github.com/4lt1/salt-top.git:
+     # Define que para o repositório salt-top todos environments usarão a branch main
      - all_saltenvs: main
    - https://github.com/4lt1/commons.git
 
